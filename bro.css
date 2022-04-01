@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic");
+
+body {
+  font-family: "Poppins";
+}
+.my-card {
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.my-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+#text {
+  display: inline-block;
+  vertical-align: middle;
+  color: #04f7b4;
+}
+
+#cursor {
+  display: inline-block;
+  vertical-align: middle;
+  width: 3px;
+  height: 30px;
+  animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #04f7b4;
+  }
+}
+
+.world {
+  transition: transform 0.8s;
+}
+
+.world:hover {
+  transform: scale(1.08);
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
