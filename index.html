@@ -5,11 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Redes Digitales de Datos</title>
-
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
-      rel="stylesheet"
-    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -20,19 +15,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
     />
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-      rel="stylesheet"
-    />
     <!-- MDB -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="bro.css" />
+    <link rel="stylesheet" href="index.css" />
   </head>
-  <style></style>
   <body>
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -81,6 +70,11 @@
                       >Javascript</a
                     >
                   </li>
+                  <li>
+                    <a class="dropdown-item" href="/pages/better-inputs.html"
+                      >Inputs</a
+                    >
+                  </li>
                 </ul>
               </li>
             </div>
@@ -97,13 +91,13 @@
             </h1>
           </div>
           <div
-            class="col-auto d-sm-flex d-md-flex d-lg-flex col-md-7 d-flex animate__animated animate__fadeInRight animate__delay-1s"
+            class="col-auto d-sm-flex d-md-flex d-lg-flex col-md-7 d-flex w-auto animate__animated animate__fadeInRight animate__delay-1s"
           >
             <svg
               class="world"
               xmlns="http://www.w3.org/2000/svg"
               data-name="Layer 1"
-              width="46em"
+              width="736px"
               viewBox="0 0 1176.60617 873.97852"
               xmlns:xlink="http://www.w3.org/1999/xlink"
             >
@@ -423,7 +417,11 @@
         <!-- Tareas -->
         <div class="reveal">
           <h2 class="display-3 text-black text-center m-5">Tareas</h2>
-          <div class="row mt-5 ms-4 ms-sm-0 ms-md-0 ms-lg-0 ms-xl-0">
+          <!-- Section: Tareas -->
+          <div
+            class="d-grid justify-content-around d-sm-flex d-md-grid d-lg-flex d-xl-flex mb-8"
+          >
+            <!-- Réplica -->
             <div class="col-auto mb-5">
               <div
                 class="card text-center my-card"
@@ -453,6 +451,7 @@
                 <div class="card-footer">2 days ago</div>
               </div>
             </div>
+            <!-- CSS -->
             <div class="col-auto mb-5">
               <div
                 class="card text-center my-card"
@@ -482,7 +481,7 @@
                 <div class="card-footer">2 days ago</div>
               </div>
             </div>
-
+            <!-- JS -->
             <div class="col-auto mb-5">
               <div class="card text-center my-card" style="width: 16rem">
                 <div
@@ -506,6 +505,35 @@
                   <p class="card-text">Todo acerca sobre Javascript</p>
                 </div>
                 <div class="card-footer">1° de abril, 2022</div>
+              </div>
+            </div>
+            <!-- INPUTS -->
+            <div class="col-auto mb-5">
+              <div
+                class="card text-center my-card"
+                style="width: 16rem; height: 310px"
+              >
+                <div
+                  class="bg-image hover-overlay ripple"
+                  data-mdb-ripple-color="light"
+                >
+                  <img
+                    src="https://blog.ida.cl/wp-content/uploads/sites/5/2012/05/encabezado1.jpg"
+                    class="img-fluid"
+                  />
+                  <a href="/pages/better-inputs.html">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.15)"
+                    ></div>
+                  </a>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">Inputs</h5>
+                  <p class="card-text">Distintos Tipos de Input en HTML5</p>
+                </div>
+                <div class="card-footer">4 de abril, 2022</div>
               </div>
             </div>
           </div>
@@ -632,17 +660,6 @@
             </form>
           </section>
           <!-- Section: Form -->
-
-          <!-- Section: Text -->
-          <section class="mb-4">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-              distinctio earum repellat quaerat voluptatibus placeat nam,
-              commodi optio pariatur est quia magnam eum harum corrupti dicta,
-              aliquam sequi voluptate quas.
-            </p>
-          </section>
-          <!-- Section: Text -->
         </div>
         <!-- Grid container -->
 
@@ -714,5 +731,5 @@
     type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.js"
   ></script>
-  <script src="/bro.js"></script>
+  <script src="/index.js"></script>
 </html>

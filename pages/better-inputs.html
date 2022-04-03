@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redes Digitales de Datos - Tarea Javascript</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="icon" href="/img/icon.png" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+    />
+    <!-- MDB ESSENTIAL -->
+    <link rel="stylesheet" href="/css/mdb.min.css" />
+    <!-- MDB PLUGINS -->
+    <link rel="stylesheet" href="/plugins/css/all.min.css" />
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html">
+            <img src="/img/home.png" alt="home" style="width: 7rem" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="/pages/features.html">Features</a>
+              <!-- Dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle active"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Tareas
+                </a>
+                <!-- Dropdown menu -->
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="/replica/replica.html"
+                      >Réplica</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/pages/estilos.html"
+                      >Estilos CSS</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/pages/javascript.html"
+                      >Javascript</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item active" href="#">Inputs</a>
+                  </li>
+                </ul>
+              </li>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <main>
+        <section class="animate__animated animate__fadeInRightBig">
+          <!--Section title-->
+          <h2 class="mt-5 mb-4">Tipos de Input</h2>
+          <!-- Section description -->
+          <p>
+            Los tipos de input permiten especificar qué datos deben proporcionar
+            los usuarios
+          </p>
+          <!--Subsection: Text-->
+          <section>
+            <!--Subsection title-->
+            <h4 class="mt-5 mb-3">Text</h4>
+            <!--Description-->
+            <p><code>&lt;input type="text"&gt;</code></p>
+            <!--Section: Demo-->
+            <section class="pb-4">
+              <div class="bg-white border rounded-5">
+                <section class="w-100 p-4 d-flex justify-content-center pb-4">
+                  <div class="form-outline" style="width: 22rem">
+                    <input type="text" id="typeText" class="form-control" />
+                    <label class="form-label" for="typeText">Text input</label>
+                  </div>
+                </section>
+              </div>
+            </section>
+          </section>
+          <!--Subsection: Email-->
+          <section>
+            <!--Subsection title-->
+            <h4 class="mt-5 mb-3">Email</h4>
+            <!--Description-->
+            <p><code>&lt;input type="email"&gt;</code></p>
+            <!--Section: Demo-->
+            <section class="pb-4">
+              <div class="bg-white border rounded-5">
+                <section class="w-100 p-4 d-flex justify-content-center pb-4">
+                  <div class="form-outline" style="width: 22rem">
+                    <input type="email" id="typeEmail" class="form-control" />
+                    <label class="form-label" for="typeEmail"
+                      >Email input</label
+                    >
+                  </div>
+                </section>
+              </div>
+            </section>
+          </section>
+          <!--Subsection: Password-->
+          <section>
+            <!--Subsection title-->
+            <h4 class="mt-5 mb-3">Password</h4>
+            <!--Description-->
+            <p><code>&lt;input type="password"&gt;</code></p>
+            <!--Section: Demo-->
+            <section class="pb-4">
+              <div class="bg-white border rounded-5">
+                <section class="w-100 p-4 d-flex justify-content-center pb-4">
+                  <div class="form-outline" style="width: 22rem">
+                    <input
+                      type="password"
+                      id="typePassword"
+                      class="form-control"
+                    />
+                    <label class="form-label" for="typePassword"
+                      >Password input</label
+                    >
+                  </div>
+                </section>
+              </div>
+            </section>
+          </section>
+          <!--Subsection: Number-->
+          <section>
+            <!--Subsection title-->
+            <h4 class="mt-5">Number</h4>
+
+            <!--Description-->
+            <p><code>&lt;input type="number"&gt;</code></p>
+
+            <!--Section: Demo-->
+            <section class="pb-4">
+              <div class="bg-white border rounded-5">
+                <section class="w-100 p-4 d-flex justify-content-center pb-4">
+                  <div class="form-outline" style="width: 22rem">
+                    <input type="number" id="typeNumber" class="form-control" />
+                    <label class="form-label" for="typeNumber"
+                      >Number input</label
+                    >
+                  </div>
+                </section>
+              </div>
+            </section>
+          </section>
+          <!--Subsection: Phone number-->
+          <section>
+            <!--Subsection title-->
+            <h4 class="mt-5 mb-3">Phone number</h4>
+            <!--Description-->
+            <p><code>&lt;input type="tel"&gt;</code></p>
+            <!--Section: Demo-->
+            <section class="pb-4">
+              <div class="bg-white border rounded-5">
+                <section class="w-100 p-4 d-flex justify-content-center pb-4">
+                  <div class="form-outline" style="width: 22rem">
+                    <input type="tel" id="typePhone" class="form-control" />
+                    <label class="form-label" for="typePhone"
+                      >Phone number input</label
+                    >
+                  </div>
+                </section>
+              </div>
+            </section>
+          </section>
+          <!--Subsection: URL-->
+          <section>
+            <!--Subsection title-->
+            <h4 class="mt-5 mb-3">URL</h4>
+            <!--Description-->
+            <p><code>&lt;input type="url"&gt;</code></p>
+            <!--Section: Demo-->
+            <section class="pb-4">
+              <div class="bg-white border rounded-5">
+                <section class="w-100 p-4 d-flex justify-content-center pb-4">
+                  <div class="form-outline" style="width: 22rem">
+                    <input type="url" id="typeURL" class="form-control" />
+                    <label class="form-label" for="typeURL">URL input</label>
+                  </div>
+                </section>
+              </div>
+            </section>
+          </section>
+          <!--Subsection: Textarea-->
+          <section>
+            <!--Subsection title-->
+            <h4 class="mt-5 mb-3">Textarea</h4>
+            <!--Description-->
+            <p><code>&lt;textarea rows="4"&gt;</code></p>
+            <!--Section: Demo-->
+            <section class="pb-4">
+              <div class="bg-white border rounded-5">
+                <section class="w-100 p-4 d-flex justify-content-center pb-4">
+                  <div class="form-outline" style="width: 22rem">
+                    <textarea
+                      class="form-control"
+                      id="textAreaExample"
+                      rows="4"
+                    ></textarea>
+                    <label class="form-label" for="textAreaExample"
+                      >Message</label
+                    >
+                  </div>
+                </section>
+              </div>
+            </section>
+          </section>
+          <!--Subsection: Color-->
+          <section>
+            <!--Subsection title-->
+            <h4 class="mt-5 mb-3">Color</h4>
+            <!--Description-->
+            <p><code>&lt;input type="color"&gt;</code></p>
+            <!--Section: Demo-->
+            <section class="pb-4">
+              <div class="bg-white border rounded-5">
+                <section class="w-100 p-4 d-flex justify-content-center pb-4">
+                  <input
+                    type="color"
+                    class="form-control form-control-color"
+                    id="exampleColorInput"
+                    value="#563d7c"
+                    title="Choose your color"
+                  />
+                </section>
+              </div>
+            </section>
+          </section>
+          <!--Subsection: Datepicker-->
+          <section>
+            <!--Subsection title-->
+            <h4 class="mt-5 mb-3">Datepicker</h4>
+            <!--Description-->
+            <p><code>&lt;input type="date"&gt;</code></p>
+            <!--Section: Demo-->
+            <section class="pb-4">
+              <div class="bg-white border rounded-5">
+                <section class="w-100 p-4 d-flex justify-content-center pb-4">
+                  <div
+                    class="form-outline datepicker-translated"
+                    data-mdb-format="dd, mmm, yyyy"
+                  >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleDatepicker4"
+                      placeholder="dd, mmm, yyyy"
+                    />
+                    <label for="exampleDatepicker4" class="form-label"
+                      >Seleccionar Fecha</label
+                    >
+                  </div>
+                </section>
+              </div>
+            </section>
+          </section>
+          <!--Subsection: Datetimepicker-->
+          <section>
+            <!--Subsection title-->
+            <h4 class="mt-5 mb-3">Datetimepicker</h4>
+            <!--Description-->
+            <p><code>&lt;input type="datetime-local"&gt;</code></p>
+            <!--Section: Demo-->
+            <section class="pb-4">
+              <div class="bg-white border rounded-5">
+                <section class="w-100 p-4 d-flex justify-content-center pb-4">
+                  <div
+                    class="form-outline datetimepicker"
+                    data-mdb-default-date="22/01/2019"
+                    data-mdb-default-time="10:33 PM"
+                    data-mdb-inline="true"
+                  >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="datetimepickerInline"
+                    />
+                    <label for="datetimepickerInline" class="form-label"
+                      >Seleccionar Fecha y Hora</label
+                    >
+                  </div>
+                </section>
+              </div>
+            </section>
+          </section>
+          <!--Subsection: Month-->
+          <section>
+            <!--Subsection title-->
+            <h4 class="mt-5 mb-3">Month</h4>
+            <!--Description-->
+            <p><code>&lt;input type="month"&gt;</code></p>
+            <!--Section: Demo-->
+            <section class="pb-4">
+              <div class="bg-white border rounded-5">
+                <section class="w-100 p-4 d-flex justify-content-center pb-4">
+                  <div class="form-outline">
+                    <input type="month" class="form-control" />
+                  </div>
+                </section>
+              </div>
+            </section>
+          </section>
+          <!--Subsection: Week-->
+          <section>
+            <!--Subsection title-->
+            <h4 class="mt-5 mb-3">Week</h4>
+            <!--Description-->
+            <p><code>&lt;input type="week"&gt;</code></p>
+            <!--Section: Demo-->
+            <section class="pb-4">
+              <div class="bg-white border rounded-5">
+                <section class="w-100 p-4 d-flex justify-content-center pb-4">
+                  <div class="form-outline">
+                    <input type="week" class="form-control" />
+                  </div>
+                </section>
+              </div>
+            </section>
+          </section>
+          <!--Subsection: Time-->
+          <section>
+            <!--Subsection title-->
+            <h4 class="mt-5 mb-3">Time</h4>
+            <!--Description-->
+            <p><code>&lt;input type="time"&gt;</code></p>
+            <!--Section: Demo-->
+            <section class="pb-4">
+              <div class="bg-white border rounded-5">
+                <section class="w-100 p-4 d-flex justify-content-center pb-4">
+                  <div class="form-outline timepicker">
+                    <input type="text" class="form-control" id="form11" />
+                    <label class="form-label" for="form11"
+                      >Seleccionar Hora</label
+                    >
+                  </div>
+                </section>
+              </div>
+            </section>
+          </section>
+          <!--Subsection: Button-->
+          <section>
+            <!--Subsection title-->
+            <h4 class="mt-5 mb-3">Viejo Button</h4>
+            <!--Description-->
+            <p><code>&lt;input type="button"&gt;</code></p>
+            <!--Section: Demo-->
+            <section class="pb-4">
+              <div class="bg-white border rounded-5">
+                <section class="w-100 p-4 d-flex justify-content-center pb-4">
+                  <div class="form-outline">
+                    <input type="button" class="form-control btn btn-primary" />
+                  </div>
+                </section>
+              </div>
+            </section>
+          </section>
+          <!--Subsection: Checkbox-->
+          <section>
+            <!--Subsection title-->
+            <h4 class="mt-5 mb-3">Checkbox</h4>
+            <!--Description-->
+            <p><code>&lt;input type="checkbox"&gt;</code></p>
+            <!--Section: Demo-->
+            <section class="pb-4">
+              <div class="bg-white border rounded-5">
+                <section class="w-100 p-4 d-flex justify-content-around pb-4">
+                  <div class="form-outline">
+                    <!-- Default checkbox -->
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                      <label class="form-check-label" for="flexCheckDefault"
+                        >Default checkbox</label
+                      >
+                    </div>
+                    <!-- Checked checkbox -->
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckChecked"
+                        checked
+                      />
+                      <label class="form-check-label" for="flexCheckChecked"
+                        >Checked checkbox</label
+                      >
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </section>
+          </section>
+          <!--Subsection: Radio-->
+          <section>
+            <!--Subsection title-->
+            <h4 class="mt-5 mb-3">Radio</h4>
+            <!--Description-->
+            <p><code>&lt;input type="radio"&gt;</code></p>
+            <!--Section: Demo-->
+            <section class="pb-4">
+              <div class="bg-white border rounded-5">
+                <section class="w-100 p-4 d-flex justify-content-around pb-4">
+                  <div class="form-outline">
+                    <!-- Default radio -->
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioDefault1"
+                      />
+                      <label class="form-check-label" for="flexRadioDefault1">
+                        Default radio
+                      </label>
+                    </div>
+
+                    <!-- Default checked radio -->
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioDefault2"
+                        checked
+                      />
+                      <label class="form-check-label" for="flexRadioDefault2">
+                        Default checked radio
+                      </label>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </section>
+          </section>
+          <!--Subsection: Search-->
+          <section>
+            <!--Subsection title-->
+            <h4 class="mt-5 mb-3">Search</h4>
+            <!--Description-->
+            <p><code>&lt;input type="search"&gt;</code></p>
+            <!--Section: Demo-->
+            <section class="pb-4">
+              <div class="bg-white border rounded-5">
+                <section class="w-100 p-4 d-flex justify-content-around pb-4">
+                  <div class="form-outline">
+                    <div class="input-group">
+                      <div class="form-outline">
+                        <input type="search" id="form1" class="form-control" />
+                        <label class="form-label" for="form1">Buscar</label>
+                      </div>
+                      <button type="button" class="btn btn-primary">
+                        <i class="fas fa-search"></i>
+                      </button>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </section>
+          </section>
+          <!--Subsection: Range-->
+          <section>
+            <!--Subsection title-->
+            <h4 class="mt-5 mb-3">Range</h4>
+            <!--Description-->
+            <p><code>&lt;input type="range"&gt;</code></p>
+            <!--Section: Demo-->
+            <section class="pb-4">
+              <div class="bg-white border rounded-5">
+                <section class="w-100 p-4 d-flex justify-content-around pb-4">
+                  <div class="form-outline">
+                    <label class="form-label" for="customRange1"
+                      >Example range</label
+                    >
+                    <div class="range">
+                      <input
+                        type="range"
+                        class="form-range"
+                        id="customRange1"
+                      />
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </section>
+          </section>
+          <!--Subsection: File-->
+          <section>
+            <!--Subsection title-->
+            <h4 class="mt-5 mb-3">File</h4>
+            <!--Description-->
+            <p><code>&lt;input type="file"&gt;</code></p>
+            <!--Section: Demo-->
+            <section class="pb-4">
+              <div class="bg-white border rounded-5">
+                <section class="w-100 p-4 d-flex justify-content-around pb-4">
+                  <div class="file-upload-wrapper">
+                    <input
+                      type="file"
+                      id="input-file-now"
+                      class="file-upload-input"
+                      data-mdb-default-msg="Da click o arrastra el archivo para subirlo"
+                      data-mdb-file-upload="file-upload"
+                    />
+                  </div>
+                </section>
+              </div>
+            </section>
+          </section>
+          <!--Subsection: Submit-->
+          <section>
+            <!--Subsection title-->
+            <h4 class="mt-5 mb-3">Submit</h4>
+            <!--Description-->
+            <p><code>&lt;input type="submit"&gt;</code></p>
+            <!--Section: Demo-->
+            <section class="pb-4">
+              <div class="bg-white border rounded-5">
+                <section class="w-100 p-4 d-flex justify-content-around pb-4">
+                  <div class="form-outline">
+                    <input type="submit" />
+                  </div>
+                </section>
+              </div>
+            </section>
+          </section>
+          <!--Subsection: Reset-->
+          <section>
+            <!--Subsection title-->
+            <h4 class="mt-5 mb-3">Reset</h4>
+            <!--Description-->
+            <p><code>&lt;input type="reset"&gt;</code></p>
+            <!--Section: Demo-->
+            <section class="pb-4">
+              <div class="bg-white border rounded-5">
+                <section class="w-100 p-4 d-flex justify-content-around pb-4">
+                  <div class="form-outline">
+                    <input type="reset" />
+                  </div>
+                </section>
+              </div>
+            </section>
+          </section>
+          <!--Subsection: Image-->
+          <section>
+            <!--Subsection title-->
+            <h4 class="mt-5 mb-3">Image</h4>
+            <!--Description-->
+            <p><code>&lt;input type="image"&gt;</code></p>
+            <!--Section: Demo-->
+            <section class="pb-4">
+              <div class="bg-white border rounded-5">
+                <section class="w-100 p-4 d-flex justify-content-around pb-4">
+                  <div class="form-outline">
+                    <input
+                      width="100em"
+                      type="image"
+                      alt="Login"
+                      src="https://www.seekpng.com/png/full/364-3641813_login-button-best-graphic-design.png"
+                    />
+                  </div>
+                </section>
+              </div>
+            </section>
+          </section>
+          <!--Subsection: Hidden-->
+          <section>
+            <!--Subsection title-->
+            <h4 class="mt-5 mb-3">Hidden</h4>
+            <!--Description-->
+            <p><code>&lt;input type="hidden"&gt;</code></p>
+            <!--Section: Demo-->
+            <section class="pb-4">
+              <div class="bg-white border rounded-5">
+                <section class="w-100 p-4 d-flex justify-content-around pb-4">
+                  <div class="form-outline">
+                    <input type="hidden" />
+                  </div>
+                </section>
+              </div>
+            </section>
+          </section>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <hr class="my-5" />
+      <footer class="bg-link text-center">
+        <!-- Grid container -->
+        <div class="container p-4">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a
+              class="btn btn-primary btn-floating m-1"
+              style="background-color: #3b5998"
+              href="https://www.facebook.com/IberoPueblaMX/"
+              role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <!-- IBERO -->
+            <a
+              class="btn btn-primary btn-floating m-1"
+              style="background-color: #ee3a43"
+              href="https://www.iberopuebla.mx/"
+              role="button"
+              ><img
+                src="http://repo.iberopuebla.mx/imagenes/img/bigRubrica/rubrica_frojo_tblanco.png"
+                style="width: 26px; margin-top: 7px"
+              />
+            </a>
+
+            <!-- Instagram -->
+            <a
+              class="btn btn-primary btn-floating m-1"
+              style="
+                background: linear-gradient(
+                  45deg,
+                  #feda75 0%,
+                  #fa7e1e 25%,
+                  #d62976 50%,
+                  #962fbf 75%,
+                  #4f5bd5 100%
+                );
+              "
+              href="https://www.instagram.com/iberopueblamx/?hl=es"
+              role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+
+            <!-- Twitter -->
+            <a
+              class="btn btn-primary btn-floating m-1"
+              style="background-color: #55acee"
+              href="https://twitter.com/IberoPuebla?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+              role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+
+            <!-- Youtube -->
+            <a
+              class="btn btn-primary btn-floating m-1"
+              style="background-color: #ed302f"
+              href="https://www.youtube.com/user/iberoPueblaOficial"
+              role="button"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+
+            <a
+              class="btn btn-primary btn-floating m-1"
+              style="background-color: #25d366"
+              href="https://api.whatsapp.com/send?phone=522225794566&app=facebook&entry_point=page_cta&fbclid=IwAR23GZxN7kkh4t8FIPzMjvHV-JXY6hea8p3AfRoux-YdCDoLd2IflaRfeiU"
+              role="button"
+            >
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </section>
+          <!-- Section: Social media -->
+
+          <!-- Section: Form -->
+          <section class="">
+            <form action="">
+              <!--Grid row-->
+              <div class="row d-flex justify-content-center">
+                <!--Grid column-->
+                <div class="col-auto">
+                  <p class="pt-2">
+                    <strong>Recibe novedades</strong>
+                  </p>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-5 col-12">
+                  <!-- Email input -->
+                  <div class="form-outline mb-4">
+                    <input
+                      type="email"
+                      id="form5Example2"
+                      class="form-control"
+                    />
+                    <label class="form-label" for="form5Example2"
+                      >Correo electrónico</label
+                    >
+                  </div>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-auto">
+                  <!-- Submit button -->
+                  <button
+                    type="button"
+                    onclick="showAlert()"
+                    class="btn btn-primary mb-4"
+                  >
+                    Suscribirse
+                  </button>
+                </div>
+                <!--Grid column-->
+              </div>
+              <!--Grid row-->
+            </form>
+          </section>
+          <!-- Section: Form -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div
+          class="text-center"
+          style="
+            background: linear-gradient(
+              60deg,
+              rgb(185, 184, 184) 0%,
+              rgb(186, 186, 186) 100%
+            );
+            color: white;
+          "
+        >
+          © 2022 Copyright: Universidad Iberoamericana Puebla
+          <div>
+            <svg
+              class="waves"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 24 150 28"
+              preserveAspectRatio="none"
+              shape-rendering="auto"
+            >
+              <defs>
+                <path
+                  id="gentle-wave"
+                  d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+                />
+              </defs>
+              <g class="parallax">
+                <use
+                  xlink:href="#gentle-wave"
+                  x="48"
+                  y="0"
+                  fill="rgba(255,255,255,0.7"
+                />
+                <use
+                  xlink:href="#gentle-wave"
+                  x="48"
+                  y="3"
+                  fill="rgba(255,255,255,0.5)"
+                />
+                <use
+                  xlink:href="#gentle-wave"
+                  x="48"
+                  y="5"
+                  fill="rgba(255,255,255,0.3)"
+                />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+              </g>
+            </svg>
+          </div>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    </div>
+  </body>
+  <!-- MDB ESSENTIAL -->
+  <script type="text/javascript" src="/js/mdb.min.js"></script>
+  <!-- MDB PLUGINS -->
+  <script type="text/javascript" src="/plugins/js/all.min.js"></script>
+  <!-- Custom scripts -->
+  <script type="text/javascript"></script>
+  <script src="/index.js"></script>
+</html>
