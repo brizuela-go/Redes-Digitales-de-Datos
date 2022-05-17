@@ -26,23 +26,30 @@
   <body>
     <div class="container animate__animated">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Container wrapper -->
         <div class="container-fluid">
+          <!-- Navbar brand -->
           <a class="navbar-brand" href="/index.html">
             <img src="/img/home.png" alt="home" style="width: 7rem" />
           </a>
+
+          <!-- Toggle button -->
           <button
             class="navbar-toggler"
             type="button"
             data-mdb-toggle="collapse"
-            data-mdb-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
+            data-mdb-target="#navbarButtonsExample"
+            aria-controls="navbarButtonsExample"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <i class="fas fa-bars"></i>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
+
+          <!-- Collapsible wrapper -->
+          <div class="collapse navbar-collapse" id="navbarButtonsExample">
+            <!-- Left links -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <a class="nav-link" href="/pages/features.html">Features</a>
               <!-- Dropdown -->
               <li class="nav-item dropdown">
@@ -64,9 +71,7 @@
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="/pages/estilos.html"
-                      >Estilos CSS</a
-                    >
+                    <a class="dropdown-item" href="estilos.html">Estilos CSS</a>
                   </li>
                   <li>
                     <a class="dropdown-item" href="/pages/javascript.html"
@@ -83,9 +88,22 @@
                   </li>
                 </ul>
               </li>
+            </ul>
+            <!-- Left links -->
+
+            <div class="d-flex align-items-center">
+              <a
+                href="./pages/dashboard.html"
+                type="button"
+                class="btn btn-primary me-3"
+              >
+                Ir al Dashboard
+              </a>
             </div>
           </div>
+          <!-- Collapsible wrapper -->
         </div>
+        <!-- Container wrapper -->
       </nav>
       <div class="text-center">
         <div
@@ -309,10 +327,8 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"
   ></script>
-  <!-- MDB -->
-  <script
-    type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.js"
-  ></script>
-  <script src="/index.js"></script>
+  <!-- MDB ESSENTIAL -->
+  <script type="text/javascript" src="/js/mdb.min.js"></script>
+  <!-- MDB PLUGINS -->
+  <script type="text/javascript" src="/plugins/js/all.min.js"></script>
 </html>

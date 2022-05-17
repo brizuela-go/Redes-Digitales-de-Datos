@@ -2,6 +2,7 @@
 var _CONTENT = [
   "Badillo Lora Raúl",
   "Brizuela González Juan Eduardo",
+  "Moreno Andrade Uziel",
   "Girón Nieto Huber",
   "Universidad Iberoamericana Puebla",
 ];

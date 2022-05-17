@@ -71,24 +71,32 @@
   </head>
   <body>
     <div class="container">
+      <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Container wrapper -->
         <div class="container-fluid">
+          <!-- Navbar brand -->
           <a class="navbar-brand" href="#">
             <img src="/img/home.png" alt="home" style="width: 7rem" />
           </a>
+
+          <!-- Toggle button -->
           <button
             class="navbar-toggler"
             type="button"
             data-mdb-toggle="collapse"
-            data-mdb-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
+            data-mdb-target="#navbarButtonsExample"
+            aria-controls="navbarButtonsExample"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <i class="fas fa-bars"></i>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
+
+          <!-- Collapsible wrapper -->
+          <div class="collapse navbar-collapse" id="navbarButtonsExample">
+            <!-- Left links -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <a class="nav-link" href="/pages/features.html">Features</a>
               <!-- Dropdown -->
               <li class="nav-item dropdown">
@@ -127,10 +135,24 @@
                   </li>
                 </ul>
               </li>
+            </ul>
+            <!-- Left links -->
+
+            <div class="d-flex align-items-center">
+              <a
+                href="./pages/dashboard.html"
+                type="button"
+                class="btn btn-primary me-3"
+              >
+                Ir al Dashboard
+              </a>
             </div>
           </div>
+          <!-- Collapsible wrapper -->
         </div>
+        <!-- Container wrapper -->
       </nav>
+      <!-- Navbar -->
       <main>
         <div class="row mt-sm-5 mt-md-5 mt-lg-5 mt-xl-5">
           <div
