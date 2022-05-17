@@ -172,3 +172,20 @@ Potenciometro.on("value", (snapshot) => {
     potenciometro.innerText += `${element.val()}`;
   });
 });
+
+// Sonido
+const detectorDeSonido = db.ref("sonido");
+const detector = document.getElementById("detector-de-sonido");
+const speaker = document.getElementById("speaker");
+
+detectorDeSonido.on("value", (snapshot) => {
+  detector.innerHTML = "";
+
+  snapshot.forEach((element) => {
+    detector.innerText += `${element.val()}`;
+    speaker.innerHTML = `<i class="fas fa-volume-off"></i>`;
+    element.val() == "Silencio"
+      ? (speaker.innerHTML = `<i class="fas fa-volume-off"></i>`)
+      : (speaker.innerHTML = `<i class="fas fa-volume-up text-success"></i>`);
+  });
+});
