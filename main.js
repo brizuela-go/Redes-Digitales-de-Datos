@@ -186,6 +186,30 @@ detectorDeSonido.on("value", (snapshot) => {
     speaker.innerHTML = `<i class="fas fa-volume-off"></i>`;
     element.val() == "Silencio"
       ? (speaker.innerHTML = `<i class="fas fa-volume-off"></i>`)
-      : (speaker.innerHTML = `<i class="fas fa-volume-up text-success"></i>`);
+      : (speaker.innerHTML = `<i class="fas fa-volume-up text-success animate__animated animate__pulse animate__infinite	infinite"></i>`);
   });
+});
+
+// CO2
+const co2 = db.ref("aire");
+const detectorCo2 = document.getElementById("co2");
+const wind = document.getElementById("wind");
+
+co2.on("value", (snapshot) => {
+  detectorCo2.innerHTML = "";
+
+  detectorCo2.innerText += `${snapshot.val()} ppm`;
+  wind.innerHTML = `<i class="fas fa-wind"></i>`;
+});
+
+//Luz
+const luz = db.ref("luz");
+const detectorLuz = document.getElementById("luz");
+const foco = document.getElementById("foco");
+
+luz.on("value", (snapshot) => {
+  detectorLuz.innerHTML = "";
+
+  detectorLuz.innerText += `${snapshot.val().toFixed(4)} lúmenes`;
+  foco.innerHTML = `<i class="far fa-lightbulb"></i>`;
 });
