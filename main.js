@@ -199,7 +199,11 @@ co2.on("value", (snapshot) => {
   detectorCo2.innerHTML = "";
 
   detectorCo2.innerText += `${snapshot.val()} ppm`;
-  wind.innerHTML = `<i class="fas fa-wind"></i>`;
+  snapshot.val() < 400
+    ? (wind.innerHTML = `<i class="fas fa-check-circle text-success"></i>`)
+    : snapshot.val() < 800
+    ? (wind.innerHTML = `<i class="fas fa-exclamation-triangle text-warning"></i>`)
+    : (wind.innerHTML = `<i class="fas fa-skull-crossbones text-danger"></i>`);
 });
 
 //Luz
