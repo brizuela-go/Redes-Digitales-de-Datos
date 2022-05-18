@@ -210,6 +210,8 @@ const foco = document.getElementById("foco");
 luz.on("value", (snapshot) => {
   detectorLuz.innerHTML = "";
 
-  detectorLuz.innerText += `${snapshot.val().toFixed(4)} lúmenes`;
-  foco.innerHTML = `<i class="far fa-lightbulb"></i>`;
+  detectorLuz.innerText += `${snapshot.val().toFixed(2)} lúmenes`;
+  snapshot.val().toFixed(4) <= 999
+    ? (foco.innerHTML = `<i class="far fa-lightbulb"></i>`)
+    : (foco.innerHTML = `<i class="fas fa-lightbulb text-warning"></i>`);
 });
